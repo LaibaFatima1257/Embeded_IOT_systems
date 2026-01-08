@@ -1,0 +1,9 @@
+[wokwi]
+name = "ESP32_DHT_MQTT_NODE_RED"
+author = "Laiba1257"
+board = "nodemcu-32s"
+
+[wokwi.simulation]
+serial = 115200
+mqtt = true
+firmware = "src/main.cpp"

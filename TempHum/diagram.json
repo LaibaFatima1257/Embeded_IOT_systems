@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Laiba Fatima",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0 },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -100, "left": 150 },
+    { "type": "wokwi-oled-128x64", "id": "oled", "top": -120, "left": -100 }
+  ],
+  "connections": [
+    [ "esp:GND.1", "dht1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v0" ] ],
+    [ "esp:D15", "dht1:SDA", "blue", [ "v0" ] ],
+    [ "esp:GND.2", "oled:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "oled:VCC", "red", [ "v0" ] ],
+    [ "esp:D21", "oled:SDA", "green", [ "v0" ] ],
+    [ "esp:D22", "oled:SCL", "yellow", [ "v0" ] ]
+  ]
+}
